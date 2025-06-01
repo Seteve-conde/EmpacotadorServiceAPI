@@ -22,7 +22,7 @@ namespace Application.Services
             };
         }
 
-        public async Task<ResultadoEmpacotamentoDTO> EmpacotarAsync(PedidoEntradaWrapperDTO pedidosDto)
+        public async Task<ResultadoEmpacotamentoDTO> Empacotar(PedidoEntradaWrapperDTO pedidosDto)
         {
             var resultado = new ResultadoEmpacotamentoDTO();
 

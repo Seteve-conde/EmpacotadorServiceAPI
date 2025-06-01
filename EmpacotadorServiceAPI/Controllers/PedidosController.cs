@@ -22,7 +22,7 @@ namespace EmpacotadorServiceAPI.Controllers
         {
             try
             {
-                var resultado = await _empacotamentoService.EmpacotarAsync(pedidosWrapper);
+                var resultado = await _empacotamentoService.Empacotar(pedidosWrapper);
                 return Ok(resultado);
             }
             catch (Exception ex)

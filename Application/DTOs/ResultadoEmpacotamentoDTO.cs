@@ -8,7 +8,8 @@ namespace Application.DTOs
 {
     public class ResultadoEmpacotamentoDTO
     {
-        public List<PedidoSaidaDTO> PedidosProcessados { get; set; } = new();
-        public List<string> PedidosNaoProcessados { get; set; } = new();
+        //Aqui resolvi colocar exemplos de Semântica e Eficiência conforme a versão do C#
+        public List<PedidoSaidaDTO> PedidosProcessados { get; set; } = []; //[]: mais novo, mais conciso, C# 12+.
+        public List<string> PedidosNaoProcessados { get; set; } = new(); //new(): mais antigo, mais comum, C# 9+.
     }
 }

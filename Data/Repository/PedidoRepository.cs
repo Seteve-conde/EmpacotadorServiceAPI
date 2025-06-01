@@ -4,14 +4,10 @@ using Application.Interfaces;
 
 namespace Data.Repository
 {
-    public class PedidoRepository : IPedidoRepository
+    //Aqui mais um recurso do C# 12 o Primary Constructor
+    public class PedidoRepository(EmpacotamentoDbContext context) : IPedidoRepository
     {
-        private readonly EmpacotamentoDbContext _context;
-
-        public PedidoRepository(EmpacotamentoDbContext context)
-        {
-            _context = context;
-        }
+        private readonly EmpacotamentoDbContext _context = context;
 
         public async Task SalvarPedidoAsync(Pedido pedido)
         {

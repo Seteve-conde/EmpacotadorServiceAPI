@@ -4,6 +4,6 @@ namespace Application.Interfaces
 {
     public interface IEmpacotamentoService
     {
-        Task<ResultadoEmpacotamentoDTO> EmpacotarAsync(PedidoEntradaWrapperDTO pedidosDto);
+        Task<ResultadoEmpacotamentoDTO> Empacotar(PedidoEntradaWrapperDTO pedidosDto);
     }
 }
