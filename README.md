@@ -1,5 +1,9 @@
 # 📦 Como Executar este Projeto
 
+## Arquitetura da Solução
+
+A aplicação foi estruturada com base nos princípios de Clean Architecture e Domain-Driven Design, assegurando separação de responsabilidades e um modelo de domínio expressivo. Foram empregados os padrões Repository e Service para garantir modularidade e facilidade na manutenção. A segurança é reforçada através de autenticação via JWT com criptografia. Além disso, a solução conta com uma camada de testes unitários, promovendo qualidade e confiabilidade.
+
 ## ✅ Pré-requisitos
 
 - Docker Desktop instalado (inclui Docker Compose).
