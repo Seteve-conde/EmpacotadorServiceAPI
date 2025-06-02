@@ -1,5 +1,6 @@
-﻿Como Executar este Projeto
-✅ Pré-requisitos
+﻿# Como Executar este Projeto
+
+## ✅ Pré-requisitos
 
 Docker Desktop instalado (inclui Docker Compose).
 
@@ -14,7 +15,9 @@ Via Git:
 bash
 Copiar
 Editar
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/Seteve-conde/EmpacotadorServiceAPI.git)
+
+git clone https://github.com/Seteve-conde/EmpacotadorServiceAPI.git
+
 cd seu-repositorio
 Ou baixando manualmente:
 
@@ -24,7 +27,7 @@ Clique em "Code" > "Download ZIP".
 
 Extraia o conteúdo em uma pasta local.
 
-🚀 Passo 2: Executar os Containers
+## 🚀 Passo 2: Executar os Containers
 
 Na raiz do projeto (onde está o arquivo docker-compose.yml), execute:
 
@@ -42,7 +45,7 @@ Outro para a API do microserviço.
 
 ✅ Executar automaticamente as migrations, criando o banco de dados e suas tabelas.
 
-🚀 Passo 3: Acessar a API
+## 🚀 Passo 3: Acessar a API
 
 Após a inicialização, a API estará disponível para testes via Swagger no endereço:
 
@@ -66,7 +69,7 @@ No topo da interface do Swagger, clique em "Authorize" e cole o token.
 
 Obs.: Não é necessário colocar "Bearer" antes, apenas cole o token.
 
-🚀 Passo 4: Encerrar os Containers
+## 🚀 Passo 4: Encerrar os Containers
 
 Para parar e remover os containers, execute:
 
