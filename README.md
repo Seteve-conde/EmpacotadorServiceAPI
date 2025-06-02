@@ -1,4 +1,5 @@
-﻿Como Executar este Projeto
+﻿# Como Executar este Projeto
+
 ✅ Pré-requisitos
 
 Docker Desktop instalado (inclui Docker Compose).
@@ -14,7 +15,7 @@ Via Git:
 bash
 Copiar
 Editar
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Seteve-conde/EmpacotadorServiceAPI.git
 cd seu-repositorio
 Ou baixando manualmente:
 
