@@ -3,30 +3,35 @@ version: '3.8'
 services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: sqlserver
+    container_name: sqlserver-empacotador
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=SenhaForte123!
     ports:
-      - "1433:1433"
+      - "1434:1433"
     volumes:
       - sqlserver_data:/var/opt/mssql
     networks:
       - empacotador-network
+    restart: unless-stopped
 
   empacotador-service:
-    image: empacotadorserviceapi:dev
-    container_name: empacotador-service
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: EmpacotadorServiceAPI/Dockerfile
+    container_name: empacotador-service
     ports:
       - "8080:8080"
       - "8081:8081"
     depends_on:
       - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=EmpacotadorDb;User Id=sa;Password=SenhaForte123!;TrustServerCertificate=True;
+      - Jwt__Key=hvuq3ZU85ts0UFZtGBnBOfF3b76okTCb7EI8sSW9IVV9c4yIlixDUV7YrxbP3G0Ctjella7BFu9zNfDC3PtXJYqkbbWoiD5ZMXPBdJ6HWcoxU82Tz7djpVQVNvcd5WyTovTH3Mgeo9KZ80L8gTJxLqU3sWFeJfPVydWyi8oj3COZcdm7hbzfUicNtCHHoL6HbGhC3MoCaqeQPsm042y4FjUH9JVbPvXU9NBW7KVc8zgihPPa60lSva4uZ4J2BagW
     networks:
       - empacotador-network
+    restart: unless-stopped
 
 volumes:
   sqlserver_data:
