@@ -18,9 +18,6 @@ Você pode obter o código de duas maneiras:
 ### ✔️ Via Git
 
 git clone https://github.com/Seteve-conde/EmpacotadorServiceAPI.git
-cd EmpacotadorServiceAPI
-
-text
 
 ### ✔️ Ou baixando manualmente
 
@@ -35,8 +32,6 @@ text
 Na raiz do projeto (onde está o arquivo `docker-compose.yml`), execute o seguinte comando:
 
 docker-compose up --build
-
-text
 
 Esse comando irá:
 
@@ -66,7 +61,9 @@ Como a API utiliza segurança JWT, siga estes passos:
 2. Copie o token JWT que será retornado.
 3. No topo da interface do Swagger, clique em "Authorize" e cole o token.
    - **Importante:** Não é necessário colocar "Bearer" antes, apenas cole o token.
-
+     
+4. Para testar a rota POST /Pedidos/embalar você pode usar o exemplo de entrada json que foi disponibilizado.
+https://drive.google.com/file/d/1iS9ugtvXlvhW8zlotq6MOSOlffz0r0ws/view?usp=sharing
 ---
 
 ## 🚀 Passo 4: Encerrar os Containers
