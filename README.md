@@ -30,9 +30,9 @@ Extraia o conteúdo em uma pasta local.
 Na raiz do projeto (onde está o arquivo docker-compose.yml), execute:
 
 bash
-Copiar
-Editar
+
 docker-compose up --build
+
 Esse comando irá:
 ✅ Construir as imagens necessárias.
 ✅ Criar e iniciar dois containers:
