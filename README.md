@@ -14,7 +14,7 @@ Via Git:
 bash
 Copiar
 Editar
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/Seteve-conde/EmpacotadorServiceAPI.git)
 cd seu-repositorio
 Ou baixando manualmente:
 
